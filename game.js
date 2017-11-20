@@ -632,7 +632,7 @@ AlienBullet = function () {
 };
 AlienBullet.prototype = new Bullet();
 
-Asteroid = function () {
+/*Asteroid = function () {
   this.init("asteroid",
             [-10,   0,
               -5,   7,
@@ -643,7 +643,14 @@ Asteroid = function () {
                5,  -6,
                2, -10,
               -4, -10,
-              -4,  -5]);
+              -4,  -5]);*/
+
+  Asteroid = function () {
+  this.init("asteroid",
+      [0,   5,
+        -5,   0,
+        0,   -5,
+        5,  0 ]);
 
   this.visible = true;
   this.scale = 6;
